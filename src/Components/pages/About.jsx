@@ -29,10 +29,9 @@ const logoStack = [
 function About() {
 
     return (
-        <div className='bg-main-background'>
+        <div className="relative z-10 lg:px-10 px-6 py-20 justify-center items-center text-white flex bg-main-background">
             <Animation animation="Down-up" className="transition-transform duration-500">
-                <div className="relative z-10 lg:px-10 px-6 py-20 justify-center items-center text-white flex bg-main-background gap-10 lg:gap-2 lg:flex-row flex-col">
-
+                <div className="flex flex-col lg:flex-row">
                     <div className="lg:w-1/2 h-full flex justify-center items-center relative overflow-visible w-full">
 
                         <div className="absolute text-[#ef6957]/50 text-2xl sm:text-5xl lg:text-6xl left-0 top-[30%] rotate-[12deg] select-none">&lt;/&gt;</div>
@@ -54,7 +53,7 @@ function About() {
                     </div>
 
 
-                    <div className="lg:w-1/2 mx-auto space-y-10">
+                    <div className="lg:w-1/2 mx-auto space-y-10 mt-10 lg:mt-0">
 
                         <div>
                             <h2 className="text-3xl sm:text-4xl font-semibold border-b-4 inline-block border-[#ef6957] pb-1">
@@ -92,7 +91,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-            </Animation>
+            </Animation >
         </div>
 
     );
