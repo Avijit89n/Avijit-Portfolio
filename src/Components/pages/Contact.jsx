@@ -15,6 +15,7 @@ import {
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 import Animation from '../common/Animation';
+import { Link } from 'react-router-dom';
 
 function Contact() {
   const [loading, setLoading] = useState(false);
@@ -131,16 +132,10 @@ function Contact() {
                   <h3 className="text-lg font-semibold text-white mb-4">Follow Me</h3>
                   <div className="flex gap-3">
                     <div className="w-12 h-12 bg-gray-500/20 hover:bg-gray-500/30 rounded-lg flex items-center justify-center transition-all duration-300 cursor-pointer group hover:scale-110">
-                      <Github className="w-5 h-5 text-gray-400 group-hover:scale-110 transition-transform duration-300" />
+                      <Link to="https://github.com/Avijit89n"><Github className="w-5 h-5 text-gray-400 group-hover:scale-110 transition-transform duration-300" /></Link>
                     </div>
                     <div className="w-12 h-12 bg-blue-500/20 hover:bg-blue-500/30 rounded-lg flex items-center justify-center transition-all duration-300 cursor-pointer group hover:scale-110">
-                      <Linkedin className="w-5 h-5 text-blue-400 group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                    <div className="w-12 h-12 bg-sky-500/20 hover:bg-sky-500/30 rounded-lg flex items-center justify-center transition-all duration-300 cursor-pointer group hover:scale-110">
-                      <Twitter className="w-5 h-5 text-sky-400 group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                    <div className="w-12 h-12 bg-red-500/20 hover:bg-red-500/30 rounded-lg flex items-center justify-center transition-all duration-300 cursor-pointer group hover:scale-110">
-                      <Mail className="w-5 h-5 text-red-400 group-hover:scale-110 transition-transform duration-300" />
+                      <Link to="https://www.linkedin.com/in/avijit-biswas-0b6b12259"><Linkedin className="w-5 h-5 text-blue-400 group-hover:scale-110 transition-transform duration-300" /></Link>
                     </div>
                   </div>
                 </div>

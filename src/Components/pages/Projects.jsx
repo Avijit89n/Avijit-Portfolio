@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { Badge } from '../ui/badge';
-import { useInView } from 'react-intersection-observer';
 import Animation from '../common/Animation';
 
 const projects = [
@@ -11,19 +10,15 @@ const projects = [
     subtitle: "Next-Gen Shopping",
     description: "Modern grocery e-commerce app with real-time cart, product filters, secure checkout, dynamic admin dashboard, and Dockerized deployment. Built with React, Node.js, MongoDB, Express and TailwindCSS.",
     technologies: ["MERN", "TailwindCSS", "Docker", "JWT", "Razorpay", "Shadcn"],
-    github: "https://github.com/Avijit89n/GreenBasket-Full-Stack-Grocery-E-commerce-Platform",
     live: "https://github.com/Avijit89n/GreenBasket-Full-Stack-Grocery-E-commerce-Platform",
     image: "greenBusket.png"
   },
-
   {
     id: 2,
     title: "Home Automation System",
     description: "A smart home automation solution using Arduino and sensors to control lights and appliances remotely via smartphone. Features real-time status monitoring, energy efficiency, and seamless user interaction.",
     technologies: ["IOT", "Arduino IDE", "Electronics", "Esp32"],
-    year: "2023",
-    github: "#",
-    live: "#",
+    live: "https://github.com/Avijit89n/Home-automation",
     image: "home-auto.png"
   },
   {
@@ -32,10 +27,7 @@ const projects = [
     subtitle: "Crypto Analytics",
     description: "An IoT-based solution using sensors and ESP32 to automate vehicle detection and parking slot management. Enables real-time monitoring, efficient space utilization, and automated gate control, hassle-free parking.",
     technologies: ["Arduino IDE", "Esp32", "RFID", "I2C", "SPI"],
-    year: "2023",
-    github: "#",
-    live: "#",
-    color: "#f59e0b",
+    live: "https://github.com/Avijit89n/Smart-car-parking-with-IOT-and-RFID",
     image: "car.png"
   },
   {
@@ -43,10 +35,7 @@ const projects = [
     title: "Tic Tac Toe Game",
     description: "A classic 2-player Tic Tac Toe game built with HTML, CSS, and JavaScript. Features turn-based logic, win detection, and a responsive, minimal UI.",
     technologies: ["HTML", "Css", "JavaScript"],
-    year: "2023",
-    github: "#",
     live: "https://avijit89n.github.io/Tic-Tac-Toe---game/",
-    color: "#f59e0b",
     image: "tic.png"
   },
   {
@@ -55,10 +44,7 @@ const projects = [
     subtitle: "Smart Home AI",
     description: "A sleek front-end clone of Amazon’s homepage built using HTML, Tailwind CSS. Designed to mimic core UI elements like the navbar, search bar, category links, and product grid with responsive styling.",
     technologies: ["HTML", "CSS"],
-    year: "2024",
-    github: "#",
-    live: "#",
-    color: "#10b981",
+    live: "https://github.com/Avijit89n/Amazon-UI-Clone",
     image: "amazon.png"
   }
 ];

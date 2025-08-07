@@ -37,11 +37,17 @@ function Home() {
             }
         )]
     )
+    const scrollToSection = (id) => {
+        const el = document.querySelector(id);
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
 
     return (
         <div className='bg-main-background flex flex-col pt-[65px]'>
             <div className='flex min-h-[560px] relative flex-col lg:flex-row w-full '>
-                <div className='lg:w-1/2 w-full flex flex-col justify-center z-30 relative md:px-12 px-6 space-y-5 my-24 md:0'>
+                <div className='lg:w-1/2 w-full flex flex-col justify-center z-30 relative md:px-12 px-6 space-y-5 mt-16 mb-24 md:0'>
 
                     <div className='flex items-end gap-2 animate-pop-up  opacity-0'>
                         <h1 className='text-white text-6xl font-semibold'>Hello</h1>
@@ -64,7 +70,7 @@ function Home() {
                     </p>
 
                     <div className="flex gap-8 pt-2 text-sm delay-800 animate-pop-up opacity-0 text-white font-semibold flex-wrap">
-                        <button className="cursor-pointer uppercase bg-transparent border border-[#ef6957] px-6 py-2 rounded-md text-[#ef6957] transition duration-200 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#ffffff33,-0.5rem_-0.5rem_#ef6957]">
+                        <button onClick={() => scrollToSection("#contact")} className="cursor-pointer uppercase bg-transparent border border-[#ef6957] px-6 py-2 rounded-md text-[#ef6957] transition duration-200 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#ffffff33,-0.5rem_-0.5rem_#ef6957]">
                             Get in Touch
                         </button>
                         <button className="cursor-pointer uppercase bg-transparent border border-[#ef6957] px-6 py-2 rounded-md text-[#ef6957] transition duration-200 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#ffffff33,-0.5rem_-0.5rem_#ef6957]">
