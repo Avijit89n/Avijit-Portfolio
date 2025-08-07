@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 const Animation = ({ children, className = "", animation = "fade-up" }) => {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.2,
     triggerOnce: true,
   });
 
