@@ -6,7 +6,7 @@ import { HashRouter } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 
 createRoot(document.getElementById('root')).render(
-  <HashRouter>
+  <HashRouter basename='/Avijit-Portfolio/'>
     <StrictMode>
       <App />
       <Toaster position='bottom-right'/>
